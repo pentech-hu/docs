@@ -56,3 +56,19 @@ log('decoded JSON', decodedPhrase);
 
 let decoded = JSON.parse(decodedPhrase);
 log('decoded data', decoded);
+
+/*  
+
+Example output:
+
+           ALGORITHM:  aes-256-cbc
+                 KEY:  ff822270efbbb07773c48ea81c90120f
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+       original data:  { session: '1ec0', user: 'eadc' }
+       original JSON:  {"session":"1ec0","user":"eadc"}
+           encrypted:  tPgImxgyvYm24bXOwKPDyz/U3RLUsBC7tMEubztjklAMmzT1Bb+Gzo+kmKQkf/G4:6b151156943e0dea
+         url encoded:  tPgImxgyvYm24bXOwKPDyz%2FU3RLUsBC7tMEubztjklAMmzT1Bb%2BGzo%2BkmKQkf%2FG4%3A6b151156943e0dea
+         url decoded:  tPgImxgyvYm24bXOwKPDyz/U3RLUsBC7tMEubztjklAMmzT1Bb+Gzo+kmKQkf/G4:6b151156943e0dea
+        decoded JSON:  {"session":"1ec0","user":"eadc"}
+        decoded data:  { session: '1ec0', user: 'eadc' }
+*/
